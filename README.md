@@ -1,6 +1,6 @@
 # Frontend Mentor - FEM30hackaton
 
-![Design preview for the Weather app coding challenge](./public/preview.jpg)
+![Design preview for the Weather app coding challenge](/public/preview.jpg)
 
 ## Welcome! 👋
 
