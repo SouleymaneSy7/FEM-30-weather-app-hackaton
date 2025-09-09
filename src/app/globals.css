@@ -94,6 +94,22 @@
   body {
     @apply bg-neutral-900 font-dm-sans font-medium text-fs-preset-7 leading-small overflow-x-hidden;
   }
+
+  .visualy-hidden {
+    display: inline-block;
+    position: absolute;
+
+    height: 0.0625rem;
+    width: 0.0625rem;
+
+    border: 0;
+    clip: rect(0 0 0 0);
+
+    margin: -0.0625rem;
+    padding: 0;
+
+    overflow: hidden;
+  }
 }
 
 @layer utilities {
@@ -128,10 +144,4 @@
   .text-preset-8 {
     @apply text-fs-preset-8;
   }
-}
-
-body {
-  background: var(--color-neutral-900);
-  color: var(--color-neutral-0);
-  font-family: Arial, Helvetica, sans-serif;
 }
