@@ -11,7 +11,7 @@ export type ListPropsType<Item, As extends React.ElementType> = {
   as?: As;
 };
 
-export type VisuallyHiddenPropsType = {
+export type VisualyHiddenPropsType = {
   children: React.ReactNode;
 } & React.ComponentPropsWithoutRef<"span">;
 
