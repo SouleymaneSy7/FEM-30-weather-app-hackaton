@@ -23,7 +23,6 @@
   --font-heading: var(--font-geist-mono);
 
   /* Font Weight */
-  --font-weight-*: initial;
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -31,7 +30,6 @@
   --font-weight-bold: 700;
 
   /* Font Size */
-  --text-*: initial;
   --text-fs-preset-1: 6rem;
   --text-fs-preset-2: 3.25rem;
   --text-fs-preset-3: 2rem;
@@ -42,12 +40,10 @@
   --text-fs-preset-8: 0.875rem;
 
   /* Line Height */
-  --leading-*: initial;
   --leading-large: 100%;
   --leading-small: 120%;
 
   /* Letter Spacing */
-  --tracking-*: initial;
   --tracking-tight: -0.125rem;
 
   /* Spacing */
@@ -88,6 +84,10 @@
   --container-medium: 45rem;
   --container-large: 76rem;
   --container-x-large: 96rem;
+}
+
+@utility container {
+  @apply mx-auto max-w-[var(--container)] px-4 md:px-6;
 }
 
 @layer base {
