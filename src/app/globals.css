@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @theme inline {
   /* Colors  */
   --color-*: initial;
@@ -23,18 +24,114 @@
 
   /* Font Weight */
   --font-weight-*: initial;
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
 
+  /* Font Size */
+  --text-*: initial;
+  --text-fs-preset-1: 6rem;
+  --text-fs-preset-2: 3.25rem;
+  --text-fs-preset-3: 2rem;
+  --text-fs-preset-4: 1.75rem;
+  --text-fs-preset-5: 1.25rem;
+  --text-fs-preset-6: 1.125rem;
+  --text-fs-preset-7: 1rem;
+  --text-fs-preset-8: 0.875rem;
+
+  /* Line Height */
+  --leading-*: initial;
+  --leading-large: 100%;
+  --leading-small: 120%;
+
+  /* Letter Spacing */
+  --tracking-*: initial;
+  --tracking-tight: -0.125rem;
+
   /* Spacing */
+  --spacing-0: 0;
+  --spacing-025: 0.125rem;
+  --spacing-050: 0.25rem;
+  --spacing-075: 0.375rem;
+  --spacing-100: 0.5rem;
+  --spacing-125: 0.625rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 1rem;
+  --spacing-250: 1.25rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-800: 4rem;
+  --spacing-1000: 5rem;
+  --spacing-1200: 6rem;
+  --spacing-1400: 7rem;
+  --spacing-1600: 8rem;
+  --spacing-1800: 8.75rem;
 
   /* Border Radius */
+  --radius-*: initial;
+  --radius-rounded-0: 0;
+  --radius-rounded-4: 0.25rem;
+  --radius-rounded-6: 0.375rem;
+  --radius-rounded-8: 0.5rem;
+  --radius-rounded-10: 0.625rem;
+  --radius-rounded-12: 0.75rem;
+  --radius-rounded-16: 1rem;
+  --radius-rounded-20: 1.25rem;
+  --radius-rounded-24: 1.5rem;
+  --radius-rounded-full: 100vw;
+
+  /* Container */
+  --container-medium: 45rem;
+  --container-large: 76rem;
+  --container-x-large: 96rem;
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-900 font-dm-sans font-medium text-fs-preset-7 leading-small overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply text-fs-preset-1 font-semi-bold leading-large italic tracking-tight;
+  }
+
+  .text-preset-2 {
+    @apply font-bricolage-grotesque text-fs-preset-2 leading-small font-bold;
+  }
+
+  .text-preset-3 {
+    @apply text-fs-preset-3 font-light;
+  }
+
+  .text-preset-4 {
+    @apply text-fs-preset-4 leading-large font-bold;
+  }
+
+  .text-preset-5 {
+    @apply text-fs-preset-5;
+  }
+
+  .text-preset-6 {
+    @apply text-fs-preset-6;
+  }
+
+  .text-preset-7 {
+    @apply text-fs-preset-7;
+  }
+
+  .text-preset-8 {
+    @apply text-fs-preset-8;
+  }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-neutral-900);
+  color: var(--color-neutral-0);
   font-family: Arial, Helvetica, sans-serif;
 }
