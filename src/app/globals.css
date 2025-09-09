@@ -1,22 +1,36 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Colors  */
+  --color-*: initial;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-neutral-900: oklch(0.142 0.088 270.99);
+  --color-neutral-800: oklch(0.281 0.0501 284.97);
+  --color-neutral-700: oklch(0.3206 0.0496 285.52);
+  --color-neutral-600: oklch(0.3701 0.0598 285.36);
+  --color-neutral-300: oklch(0.7534 0.013 286.08);
+  --color-neutral-200: oklch(0.8712 0.0067 293.92);
+  --color-neutral-0: hsl(0, 0%, 100%);
+
+  --color-orange-500: oklch(0.7268 0.1871 51.03);
+
+  --color-blue-500: oklch(0.5184 0.2021 271.58);
+  --color-blue-700: oklch(0.3559 0.1911 276.51);
+
+  /* Font Family */
+  --font-*: initial;
+  --font-body: var(--font-dm-sans);
+  --font-heading: var(--font-geist-mono);
+
+  /* Font Weight */
+  --font-weight-*: initial;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+
+  /* Border Radius */
 }
 
 body {
