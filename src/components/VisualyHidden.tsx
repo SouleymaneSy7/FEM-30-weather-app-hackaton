@@ -37,7 +37,11 @@ const VisualyHidden: React.FC<VisualyHiddenPropsType> = ({
     return <React.Fragment>{children}</React.Fragment>;
   }
 
-  return <span className="visualy-hidden">{children}</span>;
+  return (
+    <span className="visualy-hidden" {...delegatedProps}>
+      {children}
+    </span>
+  );
 };
 
 export default VisualyHidden;
