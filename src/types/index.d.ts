@@ -1,4 +1,5 @@
 import * as React from "react";
+import { LucideIcon } from "lucide-react";
 
 export type ContainerTypes<T extends React.ElementType> = {
   as?: T;
@@ -18,4 +19,9 @@ export type VisualyHiddenPropsType = {
 export interface TitleProps extends React.HTMLAttributes<HTMLElement> {
   level: keyof React.JSX.IntrinsicElements;
   children: React.ReactNode;
+}
+
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  icon?: LucideIcon;
 }
