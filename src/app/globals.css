@@ -57,7 +57,7 @@
   /* Font Family */
   --font-*: initial;
   --font-body: var(--font-dm-sans);
-  /* --font-heading: var(--font-bricolage-grotesque); */
+  --font-heading: var(--font-bricolage-grotesque);
 
   /* Font Weight */
   --font-weight-*: initial;
@@ -220,7 +220,7 @@
   }
 
   .text-preset-2 {
-    @apply text-fs-preset-2 leading-small font-bold;
+    @apply text-fs-preset-2 font-heading leading-small font-bold text-neutral-0 text-center;
   }
 
   .text-preset-3 {
