@@ -210,7 +210,7 @@
   /* } */
 
   body {
-    @apply w-full h-screen font-body font-medium text-fs-preset-7 leading-small overflow-x-hidden;
+    @apply w-full h-svh bg-neutral-900 font-body font-medium text-fs-preset-7 leading-small overflow-x-hidden;
   }
 }
 
