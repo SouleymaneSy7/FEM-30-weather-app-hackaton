@@ -26,3 +26,7 @@ export interface InputProps
   icon?: LucideIcon;
   containerWidth?: string;
 }
+
+export type CardPropsType = {
+  children: React.ReactNode;
+} & React.ComponentPropsWithoutRef<"article">;
