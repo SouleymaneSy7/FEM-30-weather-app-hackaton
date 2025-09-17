@@ -24,4 +24,5 @@ export interface TitleProps extends React.HTMLAttributes<HTMLElement> {
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   icon?: LucideIcon;
+  containerWidth?: string;
 }
