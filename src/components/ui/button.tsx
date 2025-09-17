@@ -14,7 +14,7 @@ const buttonVariants = cva(
         secondary: "bg-card text-card-foreground hover:bg-card/80",
       },
       size: {
-        default: "w-full max-w-[114px] h-[56px] px-4 py-5",
+        default: "w-full h-[56px] px-4 py-5",
         icon: "size-[43px]",
       },
     },
