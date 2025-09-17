@@ -13,7 +13,7 @@ import { Settings } from "lucide-react";
 const UnitsParameters = () => {
   return (
     <Select>
-      <SelectTrigger className="min-w-[90px] min-h-[43px] shadow-none border-none bg-neutral-800 text-neutral-0 lg:min-w-[120px]">
+      <SelectTrigger className="min-w-[90px] min-h-[43px] border-none text-neutral-0 lg:min-w-[120px]">
         <Settings className="text-neutral-0" />
         <SelectValue
           placeholder="Units"
