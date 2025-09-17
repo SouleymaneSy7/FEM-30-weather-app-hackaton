@@ -33,20 +33,20 @@
   --foreground: var(--slate-900);
   --card: var(--slate-200);
   --card-foreground: var(--slate-900);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
+  --popover: var(--slate-200);
+  --popover-foreground: var(--slate-900);
   --primary: var(--blue-500);
-  --primary-foreground: var(--slate-900);
+  --primary-foreground: var(--slate-0);
   --secondary: var(--blue-700);
-  --secondary-foreground: var(--slate-900);
+  --secondary-foreground: var(--slate-0);
   --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
+  --muted-foreground: var(--slate-0);
   --accent: oklch(0.968 0.007 247.896);
   --accent-foreground: oklch(0.208 0.042 265.755);
   --destructive: oklch(0.577 0.245 27.325);
   --border: var(--slate-400);
   --input: var(--slate-200);
-  --ring: oklch(0.704 0.04 256.788);
+  --ring: var(--slate-900);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -199,20 +199,20 @@
   --foreground: var(--neutral-0);
   --card: var(--neutral-800);
   --card-foreground: var(--neutral-0);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
+  --popover: var(--neutral-800);
+  --popover-foreground: var(--neutral-0);
   --primary: var(--blue-500);
   --primary-foreground: var(--neutral-0);
   --secondary: var(--blue-700);
   --secondary-foreground: var(--neutral-0);
   --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
+  --muted-foreground: var(--neutral-0);
   --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
+  --accent-foreground: var(--neutral-0);
   --destructive: oklch(0.704 0.191 22.216);
   --border: var(--neutral-600);
   --input: var(--neutral-800);
-  --ring: oklch(0.551 0.027 264.364);
+  --ring: var(--neutral-0);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -238,7 +238,7 @@
   }
 
   body {
-    @apply w-full h-svh bg-slate-50 text-slate-900 font-body text-fs-preset-7 leading-small overflow-x-hidden;
+    @apply w-full h-svh bg-background text-foreground font-body text-fs-preset-7 leading-small overflow-x-hidden;
   }
 }
 
@@ -248,7 +248,7 @@
   }
 
   .text-preset-2 {
-    @apply text-fs-preset-2 font-heading leading-small font-bold text-neutral-0 text-center;
+    @apply text-fs-preset-2 font-heading leading-small font-bold text-center;
   }
 
   .text-preset-3 {
