@@ -238,7 +238,7 @@
   }
 
   body {
-    @apply w-full h-svh bg-background text-foreground font-body text-fs-preset-7 leading-small overflow-x-hidden;
+    @apply w-full h-svh bg-background text-foreground font-body font-medium text-fs-preset-7 leading-small overflow-x-hidden;
   }
 }
 
@@ -252,7 +252,7 @@
   }
 
   .text-preset-3 {
-    @apply text-fs-preset-3 font-light;
+    @apply text-fs-preset-3 font-light leading-large;
   }
 
   .text-preset-4 {
