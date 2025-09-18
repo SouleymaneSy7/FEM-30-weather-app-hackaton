@@ -4,6 +4,7 @@ import Title from "../common/Title";
 import Container from "../common/Container";
 import DailyForecast from "./DailyForecast";
 import HourlyForecast from "./HourlyForecast";
+import SunriseAndSunset from "./SunriseAndSunset";
 
 const weatherContents = [
   { id: crypto.randomUUID(), title: "Feels like", value: "64°" },
@@ -15,6 +16,8 @@ const weatherContents = [
 const Main = () => {
   return (
     <Container as={"main"} className="container flex flex-col gap-8 pb-20">
+      <SunriseAndSunset />
+
       <section>
         <List
           items={weatherContents}
