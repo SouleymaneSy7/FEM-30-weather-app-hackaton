@@ -46,6 +46,13 @@ const dailyForecastContents = [
     minTemperature: "20°",
     maxTemperature: "14°",
   },
+  {
+    id: crypto.randomUUID(),
+    day: "Tue",
+    image: "/icon-rain.webp",
+    minTemperature: "20°",
+    maxTemperature: "14°",
+  },
 ];
 
 const DailyForecast = () => {
