@@ -1,0 +1,113 @@
+import Image from "next/image";
+import Card from "../common/Card";
+import List from "../common/List";
+import Title from "../common/Title";
+import { ScrollArea } from "../ui/scroll-area";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../ui/select";
+
+const dayOfWeeks = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+
+const hourlyWeather = [
+  {
+    id: crypto.randomUUID(),
+    image: "/icon-overcast.webp",
+    time: "3PM",
+    value: 30,
+  },
+  {
+    id: crypto.randomUUID(),
+    image: "/icon-overcast.webp",
+    time: "3PM",
+    value: 30,
+  },
+  {
+    id: crypto.randomUUID(),
+    image: "/icon-overcast.webp",
+    time: "3PM",
+    value: 30,
+  },
+  {
+    id: crypto.randomUUID(),
+    image: "/icon-overcast.webp",
+    time: "3PM",
+    value: 30,
+  },
+  {
+    id: crypto.randomUUID(),
+    image: "/icon-overcast.webp",
+    time: "3PM",
+    value: 30,
+  },
+  {
+    id: crypto.randomUUID(),
+    image: "/icon-overcast.webp",
+    time: "3PM",
+    value: 30,
+  },
+];
+
+const HourlyForecast = () => {
+  return (
+    <section className="bg-card rounded-20 px-4 py-5">
+      <div className="flex justify-between items-center mb-4">
+        <Title level="h2">Hourly forecast</Title>
+
+        <Select>
+          <SelectTrigger>
+            <SelectValue
+              placeholder="Tuesday"
+              className="text-fs-preset-8 font-medium text-neutral-0"
+            />
+          </SelectTrigger>
+          <SelectContent>
+            <List
+              items={dayOfWeeks}
+              renderItem={(day, index) => {
+                return (
+                  <SelectItem key={index} value={day}>
+                    {day}
+                  </SelectItem>
+                );
+              }}
+            />
+          </SelectContent>
+        </Select>
+      </div>
+
+      <ScrollArea className="w-full h-[526px]">
+        <List
+          items={hourlyWeather}
+          renderItem={({ id, image, time, value }) => {
+            return (
+              <li key={id} className="w-full">
+                <Card className="w-full h-15 flex items-center justify-between pl-3 pr-4 py-2.5 bg-neutral-700 border border-border">
+                  <div className="flex gap-2">
+                    <Image src={image} alt="weather image" />
+                    <p>{time}</p>
+                  </div>
+                  <p>{value}</p>
+                </Card>{" "}
+              </li>
+            );
+          }}
+        />
+      </ScrollArea>
+    </section>
+  );
+};
+
+export default HourlyForecast;

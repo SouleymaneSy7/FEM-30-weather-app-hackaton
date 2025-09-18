@@ -3,6 +3,7 @@ import Card from "../common/Card";
 import Title from "../common/Title";
 import Container from "../common/Container";
 import DailyForecast from "./DailyForecast";
+import HourlyForecast from "./HourlyForecast";
 
 const weatherContents = [
   { id: crypto.randomUUID(), title: "Feels like", value: "64°" },
@@ -13,7 +14,7 @@ const weatherContents = [
 
 const Main = () => {
   return (
-    <Container as={"main"} className="container flex flex-col gap-8">
+    <Container as={"main"} className="container flex flex-col gap-8 pb-20">
       <section>
         <List
           items={weatherContents}
@@ -39,6 +40,8 @@ const Main = () => {
       </section>
 
       <DailyForecast />
+
+      <HourlyForecast />
     </Container>
   );
 };
