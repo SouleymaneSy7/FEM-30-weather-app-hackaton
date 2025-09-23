@@ -63,5 +63,5 @@ export interface WeatherData {
 }
 
 export type CurrentWeather = WeatherData["current"];
-export type HourlyWeather = WeatherData["hourly"];
-export type DailyWeather = WeatherData["daily"];
+export type HourlyWeather = WeatherData["hourly"][];
+export type DailyWeather = WeatherData["daily"][];
