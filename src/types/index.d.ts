@@ -30,3 +30,10 @@ export interface InputProps
 export type CardPropsType = {
   children: React.ReactNode;
 } & React.ComponentPropsWithoutRef<"article">;
+
+export type SunriseSunsetPropsType = {
+  sunrise: string | undefined;
+  sunset: string | undefined;
+  sunshine: number | undefined;
+  daylight: number | undefined;
+};
